@@ -264,3 +264,11 @@ h1.section-title { font-size: 2.3rem; }
   .hero::before, .hero::after { display: none; }
   .hero-content { padding: 1.6rem; }
 }
+
+/* ===================== AJOUTS ===================== */
+/* Page Expériences : un titre par groupe, aligné sur la frise */
+.timeline-group { max-width: 750px; margin: 0 auto; }
+.timeline-group .sub-title { margin-top: 1rem; }
+/* Page Compétences : étiquettes d'outils plus lisibles */
+.tags.tools { margin: 0; }
+.tags.tools .tag { font-size: .9rem; padding: .3rem .8rem; box-shadow: 3px 3px 0 var(--black); }

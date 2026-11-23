@@ -6,6 +6,34 @@
 /* ---------- 1. LISTE DES PROJETS (à modifier avec tes vrais projets) ---------- */
 const projets = [
   {
+    titre: "Renouvellement du parc d'une clinique",
+    icone: "🏥",
+    categorie: "systeme",
+    resume: "En alternance chez Oc Santé : pilotage du renouvellement complet du parc informatique de la Clinique Plein Soleil.",
+    tags: ["Masters", "Déploiement", "Migration de données", "Oc Santé"],
+    contexte: "Référent informatique de la Clinique Plein Soleil, j'ai piloté le remplacement de l'ensemble des postes de la clinique.",
+    etapes: [
+      "Création des masters des nouveaux postes",
+      "Déploiement des postes dans les services",
+      "Migration des données des utilisateurs"
+    ],
+    competences: ["B1.1", "B1.4"]
+  },
+  {
+    titre: "Prévention cybersécurité en EHPAD",
+    icone: "🔐",
+    categorie: "securite",
+    resume: "Bénévolat : cours de sensibilisation à la cybersécurité pour les résidents d'EHPAD et de maisons de retraite.",
+    tags: ["Sensibilisation", "Hameçonnage", "Mots de passe"],
+    contexte: "Engagement bénévole (été 2025) : aider les personnes âgées à se protéger des arnaques en ligne.",
+    etapes: [
+      "Cours sur les arnaques en ligne",
+      "Reconnaître une tentative d'hameçonnage",
+      "Bonnes pratiques pour les mots de passe"
+    ],
+    competences: []
+  },
+  {
     titre: "Plan d'adressage et maquette réseau",
     icone: "🗺️",
     categorie: "reseau",
@@ -203,9 +231,9 @@ if (grid) {
       <h3>${p.icone} ${p.titre}</h3>
       <h4>Contexte</h4><p>${p.contexte}</p>
       <h4>Étapes réalisées</h4><ul>${p.etapes.map(e => `<li>${e}</li>`).join("")}</ul>
-      <h4>Compétences mobilisées</h4><p>${p.competences.join(" • ")}</p>
+      ${p.competences.length ? `<h4>Compétences mobilisées</h4><p>${p.competences.join(" • ")}</p>` : ""}
       <h4>Technologies</h4><div class="tags">${p.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
-      <a href="${p.doc}" download class="btn btn-primary">⬇ Télécharger la documentation</a>
+      ${p.doc ? `<a href="${p.doc}" download class="btn btn-primary">⬇ Télécharger la documentation</a>` : ""}
     `;
     modal.classList.add("open");
   });
