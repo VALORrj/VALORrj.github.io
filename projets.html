@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets – Valentin MOUTIER | BTS SIO SISR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== MENU (identique sur toutes les pages) ========== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">&lt;Valentin /&gt;</a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="alternance.html">Alternance</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cv.pdf" download="CV_Valentin_MOUTIER.pdf" class="nav-cv">⬇ CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section page">
+      <div class="container">
+        <h1 class="section-title">Projets</h1>
+        <div class="filters">
+          <button class="filter active" data-filter="all">Tous</button>
+          <button class="filter" data-filter="reseau">Réseau</button>
+          <button class="filter" data-filter="systeme">Système</button>
+          <button class="filter" data-filter="securite">Sécurité</button>
+        </div>
+        <!-- Pour ajouter un projet : copie un bloc <article> ... </article> et modifie-le.
+             data-cat = reseau, systeme ou securite (pour les filtres) -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- ===== PROJET : Plan d'adressage et maquette réseau ===== -->
+          <article class="project-card" data-cat="reseau">
+            <div class="project-icon">🗺️</div>
+            <h3>Plan d'adressage et maquette réseau</h3>
+            <p>Conception du réseau d'une PME sur Cisco Packet Tracer : adressage IP, sous-réseaux et tests.</p>
+            <div class="tags"><span class="tag">Packet Tracer</span><span class="tag">IPv4</span><span class="tag">Sous-réseaux</span><span class="tag">Cisco</span></div>
+            <button class="btn btn-outline btn-detail">Voir le détail</button>
+
+            <!-- Contenu affiché dans la fenêtre "Voir le détail" -->
+            <div class="project-detail" hidden>
+              <h4>Contexte</h4>
+              <p>Une PME de 3 services veut un réseau organisé et facile à faire évoluer.</p>
+              <h4>Étapes réalisées</h4>
+              <ul>
+                <li>Découpage de l'adresse réseau en sous-réseaux (un par service)</li>
+                <li>Placement des routeurs, switchs et postes dans Packet Tracer</li>
+                <li>Configuration des adresses IP et des passerelles</li>
+                <li>Tests de connectivité avec ping et tracert</li>
+              </ul>
+              <h4>Compétences mobilisées</h4>
+              <p>B1.1 • B1.4</p>
+              <a href="docs/plan-adressage.pdf" download class="btn btn-primary">⬇ Télécharger la documentation</a>
+            </div>
+          </article>
+
+          <!-- ===== PROJET : Serveur DHCP et DNS sous Windows Server ===== -->
+          <article class="project-card" data-cat="systeme">
+            <div class="project-icon">🌐</div>
+            <h3>Serveur DHCP et DNS sous Windows Server</h3>
+            <p>Attribution automatique des adresses IP et résolution des noms sur le réseau local.</p>
+            <div class="tags"><span class="tag">Windows Server</span><span class="tag">DHCP</span><span class="tag">DNS</span></div>
+            <button class="btn btn-outline btn-detail">Voir le détail</button>
+
+            <!-- Contenu affiché dans la fenêtre "Voir le détail" -->
+            <div class="project-detail" hidden>
+              <h4>Contexte</h4>
+              <p>Éviter la configuration manuelle des IP sur chaque poste et accéder aux serveurs par leur nom.</p>
+              <h4>Étapes réalisées</h4>
+              <ul>
+                <li>Installation des rôles DHCP et DNS</li>
+                <li>Création d'une étendue DHCP avec exclusions et réservations</li>
+                <li>Création de la zone DNS et des enregistrements A</li>
+                <li>Vérification sur un poste client (ipconfig /all, nslookup)</li>
+              </ul>
+              <h4>Compétences mobilisées</h4>
+              <p>B1.5</p>
+              <a href="docs/dhcp-dns.pdf" download class="btn btn-primary">⬇ Télécharger la documentation</a>
+            </div>
+          </article>
+
+          <!-- ===== PROJET : Active Directory : utilisateurs et GPO ===== -->
+          <article class="project-card" data-cat="systeme">
+            <div class="project-icon">👥</div>
+            <h3>Active Directory : utilisateurs et GPO</h3>
+            <p>Création d'un domaine, des unités d'organisation, des comptes et de stratégies de groupe.</p>
+            <div class="tags"><span class="tag">AD DS</span><span class="tag">GPO</span><span class="tag">Windows Server</span></div>
+            <button class="btn btn-outline btn-detail">Voir le détail</button>
+
+            <!-- Contenu affiché dans la fenêtre "Voir le détail" -->
+            <div class="project-detail" hidden>
+              <h4>Contexte</h4>
+              <p>Centraliser la gestion des comptes et des postes de l'entreprise.</p>
+              <h4>Étapes réalisées</h4>
+              <ul>
+                <li>Promotion du serveur en contrôleur de domaine</li>
+                <li>Création des OU par service, des utilisateurs et des groupes</li>
+                <li>Intégration des postes clients au domaine</li>
+                <li>Création de GPO (fond d'écran, lecteur réseau, mot de passe)</li>
+              </ul>
+              <h4>Compétences mobilisées</h4>
+              <p>B1.1 • B1.5</p>
+              <a href="docs/active-directory.pdf" download class="btn btn-primary">⬇ Télécharger la documentation</a>
+            </div>
+          </article>
+
+          <!-- ===== PROJET : Partage de fichiers et droits NTFS ===== -->
+          <article class="project-card" data-cat="systeme">
+            <div class="project-icon">📂</div>
+            <h3>Partage de fichiers et droits NTFS</h3>
+            <p>Mise en place de dossiers partagés par service avec les bons droits d'accès.</p>
+            <div class="tags"><span class="tag">Partage SMB</span><span class="tag">NTFS</span><span class="tag">Groupes AD</span></div>
+            <button class="btn btn-outline btn-detail">Voir le détail</button>
+
+            <!-- Contenu affiché dans la fenêtre "Voir le détail" -->
+            <div class="project-detail" hidden>
+              <h4>Contexte</h4>
+              <p>Chaque service ne doit voir que ses propres fichiers.</p>
+              <h4>Étapes réalisées</h4>
+              <ul>
+                <li>Création de l'arborescence des dossiers</li>
+                <li>Configuration des partages et des droits NTFS par groupe</li>
+                <li>Mappage automatique des lecteurs réseau par GPO</li>
+                <li>Tests avec différents comptes utilisateurs</li>
+              </ul>
+              <h4>Compétences mobilisées</h4>
+              <p>B1.1 • B1.5</p>
+              <a href="docs/partages.pdf" download class="btn btn-primary">⬇ Télécharger la documentation</a>
+            </div>
+          </article>
+
+          <!-- ===== PROJET : Serveur web Apache sous Debian ===== -->
+          <article class="project-card" data-cat="systeme">
+            <div class="project-icon">🐧</div>
+            <h3>Serveur web Apache sous Debian</h3>
+            <p>Installation d'un serveur web Linux pour héberger le site interne de l'entreprise.</p>
+            <div class="tags"><span class="tag">Debian</span><span class="tag">Apache</span><span class="tag">Linux</span><span class="tag">SSH</span></div>
+            <button class="btn btn-outline btn-detail">Voir le détail</button>
+
+            <!-- Contenu affiché dans la fenêtre "Voir le détail" -->
+            <div class="project-detail" hidden>
+              <h4>Contexte</h4>
+              <p>L'entreprise veut un intranet hébergé en interne.</p>
+              <h4>Étapes réalisées</h4>
+              <ul>
+                <li>Installation de Debian en ligne de commande</li>
+                <li>Configuration de l'IP fixe et de l'accès SSH</li>
+                <li>Installation d'Apache et création d'un virtual host</li>
+                <li>Mise en ligne d'une page de test</li>
+              </ul>
+              <h4>Compétences mobilisées</h4>
+              <p>B1.3 • B1.5</p>
+              <a href="docs/apache.pdf" download class="btn btn-primary">⬇ Télécharger la documentation</a>
+            </div>
+          </article>
+
+          <!-- ===== PROJET : Gestion de parc avec GLPI ===== -->
+          <article class="project-card" data-cat="systeme">
+            <div class="project-icon">📋</div>
+            <h3>Gestion de parc avec GLPI</h3>
+            <p>Inventaire du matériel informatique et suivi des incidents avec des tickets.</p>
+            <div class="tags"><span class="tag">GLPI</span><span class="tag">Inventaire</span><span class="tag">Tickets</span></div>
+            <button class="btn btn-outline btn-detail">Voir le détail</button>
+
+            <!-- Contenu affiché dans la fenêtre "Voir le détail" -->
+            <div class="project-detail" hidden>
+              <h4>Contexte</h4>
+              <p>Savoir quel matériel possède l'entreprise et suivre les demandes des utilisateurs.</p>
+              <h4>Étapes réalisées</h4>
+              <ul>
+                <li>Installation de GLPI sur un serveur Linux</li>
+                <li>Déploiement de l'agent d'inventaire sur les postes</li>
+                <li>Création des catégories et des profils utilisateurs</li>
+                <li>Traitement de tickets d'incident</li>
+              </ul>
+              <h4>Compétences mobilisées</h4>
+              <p>B1.1 • B1.2</p>
+              <a href="docs/glpi.pdf" download class="btn btn-primary">⬇ Télécharger la documentation</a>
+            </div>
+          </article>
+
+          <!-- ===== PROJET : Création de VLAN sur un switch Cisco ===== -->
+          <article class="project-card" data-cat="reseau">
+            <div class="project-icon">🔀</div>
+            <h3>Création de VLAN sur un switch Cisco</h3>
+            <p>Séparation des services sur le même switch grâce aux VLAN.</p>
+            <div class="tags"><span class="tag">Cisco IOS</span><span class="tag">VLAN</span><span class="tag">Trunk</span></div>
+            <button class="btn btn-outline btn-detail">Voir le détail</button>
+
+            <!-- Contenu affiché dans la fenêtre "Voir le détail" -->
+            <div class="project-detail" hidden>
+              <h4>Contexte</h4>
+              <p>Isoler le trafic de la comptabilité de celui des autres services.</p>
+              <h4>Étapes réalisées</h4>
+              <ul>
+                <li>Création des VLAN et attribution des ports</li>
+                <li>Configuration d'un lien trunk vers le routeur</li>
+                <li>Routage inter-VLAN</li>
+                <li>Sauvegarde de la configuration (copy run start)</li>
+              </ul>
+              <h4>Compétences mobilisées</h4>
+              <p>B1.1 • B1.5</p>
+              <a href="docs/vlan.pdf" download class="btn btn-primary">⬇ Télécharger la documentation</a>
+            </div>
+          </article>
+
+          <!-- ===== PROJET : Sécurisation d'un switch ===== -->
+          <article class="project-card" data-cat="securite">
+            <div class="project-icon">🛡️</div>
+            <h3>Sécurisation d'un switch</h3>
+            <p>Protection de l'accès aux équipements réseau : mots de passe, SSH et port-security.</p>
+            <div class="tags"><span class="tag">SSH</span><span class="tag">Port-security</span><span class="tag">Cisco</span></div>
+            <button class="btn btn-outline btn-detail">Voir le détail</button>
+
+            <!-- Contenu affiché dans la fenêtre "Voir le détail" -->
+            <div class="project-detail" hidden>
+              <h4>Contexte</h4>
+              <p>Empêcher un accès non autorisé aux équipements et au réseau.</p>
+              <h4>Étapes réalisées</h4>
+              <ul>
+                <li>Mots de passe chiffrés (enable secret, service password-encryption)</li>
+                <li>Remplacement de Telnet par SSH</li>
+                <li>Désactivation des ports inutilisés</li>
+                <li>Activation du port-security sur les ports d'accès</li>
+              </ul>
+              <h4>Compétences mobilisées</h4>
+              <p>B1.1 • B1.5</p>
+              <a href="docs/securisation-switch.pdf" download class="btn btn-primary">⬇ Télécharger la documentation</a>
+            </div>
+          </article>
+
+          <!-- ===== PROJET : Sauvegarde et restauration ===== -->
+          <article class="project-card" data-cat="securite">
+            <div class="project-icon">💾</div>
+            <h3>Sauvegarde et restauration</h3>
+            <p>Mise en place de sauvegardes automatiques des données et test de restauration.</p>
+            <div class="tags"><span class="tag">Windows Server Backup</span><span class="tag">Règle 3-2-1</span></div>
+            <button class="btn btn-outline btn-detail">Voir le détail</button>
+
+            <!-- Contenu affiché dans la fenêtre "Voir le détail" -->
+            <div class="project-detail" hidden>
+              <h4>Contexte</h4>
+              <p>Ne pas perdre les données de l'entreprise en cas de panne ou de rançongiciel.</p>
+              <h4>Étapes réalisées</h4>
+              <ul>
+                <li>Choix des données à sauvegarder et de la fréquence</li>
+                <li>Planification d'une sauvegarde automatique</li>
+                <li>Test de restauration d'un fichier supprimé</li>
+                <li>Rédaction d'une procédure</li>
+              </ul>
+              <h4>Compétences mobilisées</h4>
+              <p>B1.1 • B1.2</p>
+              <a href="docs/sauvegarde.pdf" download class="btn btn-primary">⬇ Télécharger la documentation</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FENÊTRE DÉTAIL PROJET ========== -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Fermer">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <button class="back-top" id="backTop" aria-label="Retour en haut">↑</button>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Valentin MOUTIER – Portfolio BTS SIO SISR</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

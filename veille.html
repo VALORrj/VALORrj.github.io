@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille technologique – Valentin MOUTIER | BTS SIO SISR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== MENU (identique sur toutes les pages) ========== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">&lt;Valentin /&gt;</a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="alternance.html">Alternance</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cv.pdf" download="CV_Valentin_MOUTIER.pdf" class="nav-cv">⬇ CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section page">
+      <div class="container">
+        <h1 class="section-title">Veille technologique</h1>
+        <div class="veille-box">
+          <h2>Sujet : la cybersécurité face aux ransomwares</h2>
+          <p>Ma veille porte sur l'évolution des attaques par rançongiciel et sur les moyens
+            de s'en protéger (sauvegardes 3-2-1, segmentation réseau, MFA, EDR).</p>
+          <p><strong>Outils utilisés :</strong> flux RSS (Feedly), alertes Google, newsletters.</p>
+          <p><strong>Sources :</strong> CERT-FR, ANSSI, Cybermalveillance.gouv.fr, LeMagIT, IT-Connect.</p>
+        </div>
+
+        <h2 class="sub-title">Articles marquants</h2>
+        <div class="articles">
+          <article class="article-card">
+            <span class="timeline-date">Mois 2026</span>
+            <h3>Titre de l'article</h3>
+            <p>Résumé en 2-3 phrases de ce que tu as retenu de l'article.</p>
+            <a href="#" target="_blank" rel="noopener">Lire la source →</a>
+          </article>
+          <article class="article-card">
+            <span class="timeline-date">Mois 2026</span>
+            <h3>Titre de l'article</h3>
+            <p>Résumé en 2-3 phrases de ce que tu as retenu de l'article.</p>
+            <a href="#" target="_blank" rel="noopener">Lire la source →</a>
+          </article>
+          <article class="article-card">
+            <span class="timeline-date">Mois 2026</span>
+            <h3>Titre de l'article</h3>
+            <p>Résumé en 2-3 phrases de ce que tu as retenu de l'article.</p>
+            <a href="#" target="_blank" rel="noopener">Lire la source →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <button class="back-top" id="backTop" aria-label="Retour en haut">↑</button>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Valentin MOUTIER – Portfolio BTS SIO SISR</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
