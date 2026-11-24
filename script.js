@@ -255,6 +255,8 @@
       body.textContent = '';
       body.appendChild(el('p', { class: 'cadre cadre-' + p.cadre, text: p.lieu }));
       body.appendChild(el('h2', { id: 'dlgTitle', text: p.titre }));
+      var pdf = 'docs/' + p.id + '.pdf';
+      body.appendChild(el('p', { class: 'dlg-actions' }, [el('a', { class: 'btn btn-primary btn-small', href: pdf, target: '_blank', rel: 'noopener', text: 'Ouvrir le PDF' }), el('a', { class: 'btn btn-small', href: pdf, download: 'Fiche_' + p.id + '.pdf', text: 'Télécharger' })]));
       body.appendChild(el('h3', { text: 'Contexte' }));
       body.appendChild(el('p', { text: p.contexte }));
       body.appendChild(el('h3', { text: "Ce que j'ai fait" }));
