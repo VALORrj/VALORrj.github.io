@@ -2,90 +2,106 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veille technologique – Valentin MOUTIER | BTS SIO SISR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veille technologique – Valentin Moutier, BTS SIO SISR</title>
+  <meta name="description" content="Veille technologique de Valentin Moutier : les rançongiciels, notamment dans le secteur de la santé.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ========== MENU (identique sur toutes les pages) ========== -->
-  <header class="header">
-    <nav class="nav container">
-      <a href="index.html" class="logo">&lt;Valentin /&gt;</a>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="alternance.html">Expériences</a></li>
-        <li><a href="veille.html">Veille</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cv.pdf" download="CV_Valentin_MOUTIER.pdf" class="nav-cv">⬇ CV</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="section page">
-      <div class="container">
-        <h1 class="section-title">Veille technologique</h1>
-        <div class="veille-box">
-          <h2>Sujet : la cybersécurité face aux ransomwares, notamment dans la santé</h2>
-          <p>Ma veille porte sur l'évolution des attaques par rançongiciel, en particulier contre les
-            établissements de santé (le secteur de mon alternance), et sur les moyens de s'en protéger
-            (sauvegardes 3-2-1, segmentation réseau, MFA, EDR).</p>
-          <p><strong>Outils utilisés :</strong> flux RSS (Feedly), alertes Google, newsletters.</p>
-          <p><strong>Sources :</strong>
-            <a href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener">CERT-FR</a>,
-            <a href="https://cyber.gouv.fr/" target="_blank" rel="noopener">ANSSI</a>,
-            <a href="https://cyberveille.esante.gouv.fr/" target="_blank" rel="noopener">CERT Santé</a>,
-            <a href="https://www.cybermalveillance.gouv.fr/" target="_blank" rel="noopener">Cybermalveillance.gouv.fr</a>,
-            <a href="https://www.lemagit.fr/" target="_blank" rel="noopener">LeMagIT</a>,
-            <a href="https://www.it-connect.fr/" target="_blank" rel="noopener">IT-Connect</a>.</p>
-        </div>
-
-        <h2 class="sub-title">Articles marquants</h2>
-        <div class="articles">
-          <article class="article-card">
-            <span class="timeline-date">Mai 2026</span>
-            <h3>Observatoire 2025 des incidents cyber en santé (ANS / CERT Santé)</h3>
-            <p>764 incidents ont été déclarés au CERT Santé en 2025. Les rançongiciels reculent d'environ 30 %,
-              mais la compromission de comptes (messagerie, VPN, Active Directory) devient la menace principale.
-              Je retiens l'importance du MFA, de la désactivation des comptes inutiles et de sauvegardes testées
-              et hors de portée des attaquants.</p>
-            <a href="https://esante.gouv.fr/actualites/cybersecurite-un-niveau-de-menace-qui-s-installe-une-resilience-qui-s-organise" target="_blank" rel="noopener">Lire la source →</a>
-          </article>
-          <article class="article-card">
-            <span class="timeline-date">Mars 2026</span>
-            <h3>Panorama de la cybermenace 2025 (ANSSI)</h3>
-            <p>L'ANSSI a traité 3 586 événements de sécurité en 2025, dont 10 % dans la santé, et recensé
-              128 compromissions par rançongiciel. Les attaquants misent de plus en plus sur le vol de données
-              et visent les équipements exposés (VPN, pare-feu) : la gestion des vulnérabilités reste prioritaire.</p>
-            <a href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/" target="_blank" rel="noopener">Lire la source →</a>
-          </article>
-          <article class="article-card">
-            <span class="timeline-date">Octobre 2025</span>
-            <h3>Retour d'expérience : rançongiciel au CH Stell de Rueil-Malmaison</h3>
-            <p>Un ancien compte administrateur de domaine, réactivé avec un mot de passe faible et un accès VPN,
-              a permis aux attaquants de prendre le contrôle de l'Active Directory puis de chiffrer les serveurs Windows.
-              Leçons : revoir régulièrement tous les comptes, imposer le MFA sur le VPN et cloisonner l'administration de l'AD.</p>
-            <a href="https://cyberveille.esante.gouv.fr/sites/default/files/media/document/2025-10/RETEX_CHU%20%2314_Rueil_VF.pdf" target="_blank" rel="noopener">Lire la source →</a>
-          </article>
-        </div>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <div class="layout">
+    <header class="side" id="side">
+      <div class="side-top">
+        <a class="id" href="index.html">
+          <span class="id-name">Valentin Moutier</span>
+          <span class="id-role">BTS SIO option SISR, technicien informatique en alternance</span>
+        </a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="sideBody">Menu</button>
       </div>
-    </section>
+      <div class="side-body" id="sideBody">
+        <p class="status"><span class="dot" aria-hidden="true"></span>Alternant chez Oc Santé depuis septembre 2025</p>
+        <nav aria-label="Navigation principale">
+          <ul class="nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="alternance.html">Parcours</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="veille.html" aria-current="page">Veille</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="docs">
+          <p class="docs-title">Documents à télécharger</p>
+          <a class="btn btn-primary" href="cv.pdf" download="CV_Valentin_MOUTIER.pdf">Télécharger le CV <span class="fmt">PDF</span></a>
+          <a class="btn" href="tableau-synthese-E5.pdf" download="Tableau_synthese_E5_Valentin_MOUTIER.pdf">Tableau de synthèse E5 <span class="fmt">PDF</span></a>
+          <a class="btn" href="tableau-synthese-E5.xlsx" download="Tableau_synthese_E5_Valentin_MOUTIER.xlsx">Tableau de synthèse E5 <span class="fmt">Excel</span></a>
+        </div>
+        <ul class="links">
+          <li><a href="mailto:moutiervalentin6@gmail.com">moutiervalentin6@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/valentin-moutier-82a618446" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/VALORrj" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </header>
 
-  </main>
+    <main class="main" id="contenu">
 
-  <button class="back-top" id="backTop" aria-label="Retour en haut">↑</button>
+      <div class="page-head">
+        <h1>Veille technologique</h1>
+        <p class="lead">Les rançongiciels, en particulier contre les établissements de santé, et les moyens de s'en protéger.</p>
+      </div>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Valentin MOUTIER – Portfolio BTS SIO SISR</p>
-  </footer>
+      <section class="section" aria-labelledby="methode">
+        <h2 id="methode">Sujet et méthode</h2>
+        <dl class="meta-list">
+          <div><dt>Sujet</dt><dd>L'évolution des attaques par rançongiciel et les moyens de s'en protéger : sauvegardes 3-2-1, segmentation réseau, MFA, EDR.</dd></div>
+          <div><dt>Pourquoi ce sujet</dt><dd>Je travaille en alternance dans des cliniques, un secteur régulièrement visé par ces attaques.</dd></div>
+          <div><dt>Outils</dt><dd>Flux RSS (Feedly), alertes Google, newsletters.</dd></div>
+          <div><dt>Sources</dt><dd><a href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener">CERT-FR</a>, <a href="https://cyber.gouv.fr/" target="_blank" rel="noopener">ANSSI</a>, <a href="https://cyberveille.esante.gouv.fr/" target="_blank" rel="noopener">CERT Santé</a>, <a href="https://www.cybermalveillance.gouv.fr/" target="_blank" rel="noopener">Cybermalveillance.gouv.fr</a>, <a href="https://www.lemagit.fr/" target="_blank" rel="noopener">LeMagIT</a>, <a href="https://www.it-connect.fr/" target="_blank" rel="noopener">IT-Connect</a></dd></div>
+        </dl>
+      </section>
 
+      <section class="section" aria-labelledby="articles">
+        <h2 id="articles">Articles marquants</h2>
+        <ol class="articles">
+          <li>
+            <p class="art-when">Mai 2026</p>
+            <div>
+              <h3>Observatoire 2025 des incidents cyber en santé</h3>
+              <p class="art-src">Agence du Numérique en Santé et CERT Santé</p>
+              <p class="art-sum">764 incidents ont été déclarés au CERT Santé en 2025. Les rançongiciels reculent d'environ 30 %, mais la compromission de comptes (messagerie, VPN, Active Directory) devient la menace principale. Je retiens l'importance du MFA, de la désactivation des comptes inutiles et de sauvegardes testées et hors de portée des attaquants.</p>
+              <a class="link" href="https://esante.gouv.fr/actualites/cybersecurite-un-niveau-de-menace-qui-s-installe-une-resilience-qui-s-organise" target="_blank" rel="noopener">Lire la source</a>
+            </div>
+          </li>
+          <li>
+            <p class="art-when">Mars 2026</p>
+            <div>
+              <h3>Panorama de la cybermenace 2025</h3>
+              <p class="art-src">ANSSI</p>
+              <p class="art-sum">L'ANSSI a traité 3 586 événements de sécurité en 2025, dont 10 % dans la santé, et recensé 128 compromissions par rançongiciel. Les attaquants misent de plus en plus sur le vol de données et visent les équipements exposés (VPN, pare-feu) : la gestion des vulnérabilités reste prioritaire.</p>
+              <a class="link" href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/" target="_blank" rel="noopener">Lire la source</a>
+            </div>
+          </li>
+          <li>
+            <p class="art-when">Octobre 2025</p>
+            <div>
+              <h3>Retour d'expérience : rançongiciel au CH Stell de Rueil-Malmaison</h3>
+              <p class="art-src">CERT Santé</p>
+              <p class="art-sum">Un ancien compte administrateur de domaine, réactivé avec un mot de passe faible et un accès VPN, a permis aux attaquants de prendre le contrôle de l'Active Directory puis de chiffrer les serveurs Windows. Leçons : revoir régulièrement tous les comptes, imposer le MFA sur le VPN et cloisonner l'administration de l'AD.</p>
+              <a class="link" href="https://cyberveille.esante.gouv.fr/sites/default/files/media/document/2025-10/RETEX_CHU%20%2314_Rueil_VF.pdf" target="_blank" rel="noopener">Lire la source (PDF)</a>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <footer class="foot">
+        <p>© <span id="year">2026</span> Valentin Moutier. Portfolio réalisé pour le BTS SIO option SISR, MyDigitalSchool Montpellier.</p>
+      </footer>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

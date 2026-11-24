@@ -2,44 +2,66 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expériences – Valentin MOUTIER | BTS SIO SISR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parcours – Valentin Moutier, BTS SIO SISR</title>
+  <meta name="description" content="Parcours de Valentin Moutier : alternance chez Oc Santé, stages, formation, projets et engagement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <div class="layout">
+    <header class="side" id="side">
+      <div class="side-top">
+        <a class="id" href="index.html">
+          <span class="id-name">Valentin Moutier</span>
+          <span class="id-role">BTS SIO option SISR, technicien informatique en alternance</span>
+        </a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="sideBody">Menu</button>
+      </div>
+      <div class="side-body" id="sideBody">
+        <p class="status"><span class="dot" aria-hidden="true"></span>Alternant chez Oc Santé depuis septembre 2025</p>
+        <nav aria-label="Navigation principale">
+          <ul class="nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="alternance.html" aria-current="page">Parcours</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="veille.html">Veille</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="docs">
+          <p class="docs-title">Documents à télécharger</p>
+          <a class="btn btn-primary" href="cv.pdf" download="CV_Valentin_MOUTIER.pdf">Télécharger le CV <span class="fmt">PDF</span></a>
+          <a class="btn" href="tableau-synthese-E5.pdf" download="Tableau_synthese_E5_Valentin_MOUTIER.pdf">Tableau de synthèse E5 <span class="fmt">PDF</span></a>
+          <a class="btn" href="tableau-synthese-E5.xlsx" download="Tableau_synthese_E5_Valentin_MOUTIER.xlsx">Tableau de synthèse E5 <span class="fmt">Excel</span></a>
+        </div>
+        <ul class="links">
+          <li><a href="mailto:moutiervalentin6@gmail.com">moutiervalentin6@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/valentin-moutier-82a618446" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/VALORrj" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </header>
 
-  <!-- ========== MENU (identique sur toutes les pages) ========== -->
-  <header class="header">
-    <nav class="nav container">
-      <a href="index.html" class="logo">&lt;Valentin /&gt;</a>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="alternance.html">Expériences</a></li>
-        <li><a href="veille.html">Veille</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cv.pdf" download="CV_Valentin_MOUTIER.pdf" class="nav-cv">⬇ CV</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main class="main" id="contenu">
 
-  <main>
+      <div class="page-head">
+        <h1>Parcours</h1>
+        <p class="lead">Une alternance dans le secteur de la santé, deux stages avant le BTS et des projets menés en parallèle de la formation.</p>
+      </div>
 
-    <section class="section page">
-      <div class="container">
-        <h1 class="section-title">Expériences</h1>
-
-        <div class="timeline-group">
-          <h2 class="sub-title">Alternance et stages</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-date">Depuis sept. 2025</span>
-              <h3>Technicien puis référent informatique (alternance) – Oc Santé</h3>
-              <p>Groupe de santé privé · Montpellier</p>
+      <section class="section" aria-labelledby="exp">
+        <h2 id="exp">Expériences professionnelles</h2>
+        <ol class="log">
+          <li>
+            <p class="log-when">Depuis sept. 2025</p>
+            <div>
+              <h3>Technicien puis référent informatique (alternance)</h3>
+              <p class="log-org">Oc Santé, groupe de santé privé, Montpellier</p>
               <ul>
                 <li>Référent de la Clinique Plein Soleil puis de la Clinique du Millénaire : environ 520 postes, 120 imprimantes et 35 équipements de bloc opératoire</li>
                 <li>Pilotage du renouvellement complet du parc de la Clinique Plein Soleil : masters, déploiement, migration des données</li>
@@ -47,75 +69,104 @@
                 <li>Support N1/N2 des équipes soignantes et administratives</li>
                 <li>Gestion des comptes utilisateurs dans l'Active Directory</li>
               </ul>
+              <p class="codes"><span class="code">B1.1</span><span class="code">B1.2</span><span class="code">B1.4</span><span class="code">B1.5</span></p>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Été 2025 · 2 mois</span>
-              <h3>Assistant de direction (stage) – Rastop Cévennes</h3>
-              <p>Micro-entreprise · Ganges</p>
+          </li>
+          <li>
+            <p class="log-when">Été 2025, 2 mois</p>
+            <div>
+              <h3>Assistant de direction (stage)</h3>
+              <p class="log-org">Rastop Cévennes, micro-entreprise, Ganges</p>
               <ul>
                 <li>Stage décroché grâce à ma prospection de terminale, aux côtés du dirigeant</li>
                 <li>Mise en œuvre de la stratégie digitale : réseaux sociaux, fiche Google</li>
                 <li>Gestion administrative et commerciale : devis, factures, suivi clients</li>
               </ul>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Été 2024 · 2 mois</span>
-              <h3>Stagiaire à la DSI – Mission Locale des Jeunes</h3>
-              <p>Montpellier</p>
+          </li>
+          <li>
+            <p class="log-when">Été 2024, 2 mois</p>
+            <div>
+              <h3>Stagiaire à la DSI</h3>
+              <p class="log-org">Mission Locale des Jeunes, Montpellier</p>
               <ul>
                 <li>Support utilisateurs N1, préparation et installation de postes de travail</li>
                 <li>Inventaire du parc informatique et gestion des comptes utilisateurs</li>
               </ul>
             </div>
-          </div>
-        </div>
+          </li>
+        </ol>
+      </section>
 
-        <div class="timeline-group">
-          <h2 class="sub-title">Projets entrepreneuriaux</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-date">2026 – en cours</span>
+      <section class="section" aria-labelledby="formation">
+        <h2 id="formation">Formation</h2>
+        <ol class="log">
+          <li>
+            <p class="log-when">2025 – 2027</p>
+            <div>
+              <h3>BTS SIO option SISR, en alternance</h3>
+              <p class="log-org">MyDigitalSchool, Montpellier. Deuxième année en cours</p>
+            </div>
+          </li>
+          <li>
+            <p class="log-when">2025</p>
+            <div>
+              <h3>Baccalauréat STMG, spécialité Mercatique, avec mention</h3>
+              <p class="log-org">Lycée Jean Mermoz, Montpellier. Major de la classe en mathématiques</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" aria-labelledby="entreprendre">
+        <h2 id="entreprendre">Projets entrepreneuriaux</h2>
+        <ol class="log">
+          <li>
+            <p class="log-when">2026 – en cours</p>
+            <div>
               <h3>Facturation électronique des micro-entreprises</h3>
-              <p>Projet personnel, en parallèle du BTS</p>
+              <p class="log-org">Projet personnel, en parallèle du BTS</p>
               <ul>
                 <li>Prospection et accompagnement de A à Z avant l'obligation de 2027 : diagnostic, choix d'une plateforme agréée, paramétrage, formation du dirigeant</li>
               </ul>
+              <p class="codes"><span class="code">B1.4</span><span class="code">B1.5</span></p>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">2024 – 2025</span>
+          </li>
+          <li>
+            <p class="log-when">2024 – 2025</p>
+            <div>
               <h3>Conseil en stratégie digitale pour TPE</h3>
-              <p>Projet de Grand oral, terminale</p>
+              <p class="log-org">Projet de Grand oral, terminale</p>
               <ul>
                 <li>Deux TPE accompagnées : l'hôtel Les Troènes (Montpellier) et Rastop Cévennes</li>
                 <li>Les Troènes : lancement sur Booking, offres directes, atouts face à Airbnb</li>
               </ul>
             </div>
-          </div>
-        </div>
+          </li>
+        </ol>
+      </section>
 
-        <div class="timeline-group">
-          <h2 class="sub-title">Engagement bénévole</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-date">Été 2025</span>
+      <section class="section" aria-labelledby="benevolat">
+        <h2 id="benevolat">Engagement bénévole</h2>
+        <ol class="log">
+          <li>
+            <p class="log-when">Été 2025</p>
+            <div>
               <h3>Prévention cybersécurité en EHPAD et maisons de retraite</h3>
               <ul>
                 <li>Cours aux résidents : arnaques en ligne, hameçonnage, mots de passe</li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </li>
+        </ol>
+        <p class="section-intro" style="margin-top:20px">En dehors de l'informatique : football et athlétisme.</p>
+      </section>
 
-  </main>
-
-  <button class="back-top" id="backTop" aria-label="Retour en haut">↑</button>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> Valentin MOUTIER – Portfolio BTS SIO SISR</p>
-  </footer>
-
+      <footer class="foot">
+        <p>© <span id="year">2026</span> Valentin Moutier. Portfolio réalisé pour le BTS SIO option SISR, MyDigitalSchool Montpellier.</p>
+      </footer>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

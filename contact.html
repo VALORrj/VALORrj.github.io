@@ -2,62 +2,86 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact – Valentin MOUTIER | BTS SIO SISR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Valentin Moutier, BTS SIO SISR</title>
+  <meta name="description" content="Contacter Valentin Moutier, étudiant en BTS SIO option SISR à Montpellier.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ========== MENU (identique sur toutes les pages) ========== -->
-  <header class="header">
-    <nav class="nav container">
-      <a href="index.html" class="logo">&lt;Valentin /&gt;</a>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="alternance.html">Expériences</a></li>
-        <li><a href="veille.html">Veille</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cv.pdf" download="CV_Valentin_MOUTIER.pdf" class="nav-cv">⬇ CV</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="section page">
-      <div class="container">
-        <h1 class="section-title">Contact</h1>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <p>📧 <a href="mailto:moutiervalentin6@gmail.com">moutiervalentin6@gmail.com</a></p>
-            <p>💼 <a href="https://www.linkedin.com/in/valentin-moutier-82a618446" target="_blank" rel="noopener">LinkedIn</a></p>
-            <p>🐙 <a href="https://github.com/VALORrj" target="_blank" rel="noopener">GitHub</a></p>
-            <a href="cv.pdf" download="CV_Valentin_MOUTIER.pdf" class="btn btn-primary">⬇ Télécharger mon CV</a>
-          </div>
-          <form class="contact-form" id="contactForm" novalidate>
-            <input type="text" id="nom" placeholder="Votre nom" required>
-            <input type="email" id="email" placeholder="Votre email" required>
-            <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
-            <p class="form-msg" id="formMsg"></p>
-          </form>
-        </div>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <div class="layout">
+    <header class="side" id="side">
+      <div class="side-top">
+        <a class="id" href="index.html">
+          <span class="id-name">Valentin Moutier</span>
+          <span class="id-role">BTS SIO option SISR, technicien informatique en alternance</span>
+        </a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="sideBody">Menu</button>
       </div>
-    </section>
+      <div class="side-body" id="sideBody">
+        <p class="status"><span class="dot" aria-hidden="true"></span>Alternant chez Oc Santé depuis septembre 2025</p>
+        <nav aria-label="Navigation principale">
+          <ul class="nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="alternance.html">Parcours</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="veille.html">Veille</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="docs">
+          <p class="docs-title">Documents à télécharger</p>
+          <a class="btn btn-primary" href="cv.pdf" download="CV_Valentin_MOUTIER.pdf">Télécharger le CV <span class="fmt">PDF</span></a>
+          <a class="btn" href="tableau-synthese-E5.pdf" download="Tableau_synthese_E5_Valentin_MOUTIER.pdf">Tableau de synthèse E5 <span class="fmt">PDF</span></a>
+          <a class="btn" href="tableau-synthese-E5.xlsx" download="Tableau_synthese_E5_Valentin_MOUTIER.xlsx">Tableau de synthèse E5 <span class="fmt">Excel</span></a>
+        </div>
+        <ul class="links">
+          <li><a href="mailto:moutiervalentin6@gmail.com">moutiervalentin6@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/valentin-moutier-82a618446" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/VALORrj" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </header>
 
-  </main>
+    <main class="main" id="contenu">
 
-  <button class="back-top" id="backTop" aria-label="Retour en haut">↑</button>
+      <div class="page-head">
+        <h1>Contact</h1>
+        <p class="lead">Pour une question sur mon parcours, une poursuite d'études ou une alternance après le BTS, écrivez-moi.</p>
+      </div>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Valentin MOUTIER – Portfolio BTS SIO SISR</p>
-  </footer>
+      <section class="section contact-grid" aria-label="Coordonnées et formulaire">
+        <div>
+          <dl class="meta-list">
+            <div><dt>E-mail</dt><dd><a href="mailto:moutiervalentin6@gmail.com">moutiervalentin6@gmail.com</a></dd></div>
+            <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/valentin-moutier-82a618446" target="_blank" rel="noopener">valentin-moutier</a></dd></div>
+            <div><dt>GitHub</dt><dd><a href="https://github.com/VALORrj" target="_blank" rel="noopener">VALORrj</a></dd></div>
+            <div><dt>Ville</dt><dd>Montpellier</dd></div>
+          </dl>
+          <div class="actions">
+            <a class="btn btn-primary" href="cv.pdf" download="CV_Valentin_MOUTIER.pdf">Télécharger le CV <span class="fmt">PDF</span></a>
+            <a class="btn" href="tableau-synthese-E5.pdf" download="Tableau_synthese_E5_Valentin_MOUTIER.pdf">Tableau de synthèse E5 <span class="fmt">PDF</span></a>
+            <a class="btn" href="tableau-synthese-E5.xlsx" download="Tableau_synthese_E5_Valentin_MOUTIER.xlsx">Tableau de synthèse E5 <span class="fmt">Excel</span></a>
+          </div>
+        </div>
+        <form class="form" id="contactForm" novalidate>
+          <div><label for="nom">Nom</label><input id="nom" name="nom" type="text" autocomplete="name" required></div>
+          <div><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div>
+          <div><button class="btn btn-primary" type="submit">Préparer l'e-mail</button></div>
+          <p class="form-msg" id="formMsg" aria-live="polite"></p>
+        </form>
+      </section>
 
+      <footer class="foot">
+        <p>© <span id="year">2026</span> Valentin Moutier. Portfolio réalisé pour le BTS SIO option SISR, MyDigitalSchool Montpellier.</p>
+      </footer>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

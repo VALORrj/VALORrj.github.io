@@ -2,99 +2,120 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil – Valentin MOUTIER | BTS SIO SISR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accueil – Valentin Moutier, BTS SIO SISR</title>
+  <meta name="description" content="Portfolio de Valentin Moutier, étudiant en BTS SIO option SISR et technicien informatique en alternance chez Oc Santé à Montpellier.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ========== MENU (identique sur toutes les pages) ========== -->
-  <header class="header">
-    <nav class="nav container">
-      <a href="index.html" class="logo">&lt;Valentin /&gt;</a>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="alternance.html">Expériences</a></li>
-        <li><a href="veille.html">Veille</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cv.pdf" download="CV_Valentin_MOUTIER.pdf" class="nav-cv">⬇ CV</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="hero">
-      <div class="container hero-content">
-        <p class="terminal">root@portfolio:~$ <span id="typing"></span><span class="cursor">_</span></p>
-        <h1>Valentin <span class="accent">MOUTIER</span></h1>
-        <h2>Étudiant en BTS SIO option SISR, en alternance</h2>
-        <p class="hero-text">Référent informatique de deux cliniques en alternance chez Oc Santé.
-          Passionné par l'informatique et l'entrepreneuriat, j'aime prendre des initiatives
-          et mener des projets de bout en bout.</p>
-        <div class="hero-buttons">
-          <a href="cv.pdf" download="CV_Valentin_MOUTIER.pdf" class="btn btn-primary">⬇ Télécharger mon CV</a>
-          <a href="projets.html" class="btn btn-outline">Voir mes projets</a>
-        </div>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <div class="layout">
+    <header class="side" id="side">
+      <div class="side-top">
+        <a class="id" href="index.html">
+          <span class="id-name">Valentin Moutier</span>
+          <span class="id-role">BTS SIO option SISR, technicien informatique en alternance</span>
+        </a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="sideBody">Menu</button>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">À propos</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>Je m'appelle <strong>Valentin MOUTIER</strong>, j'ai 19 ans et je suis actuellement en
-              <strong>2ᵉ année de BTS SIO</strong> (Services Informatiques aux Organisations),
-              option <strong>SISR</strong>, en alternance à l'école <em>MyDigitalSchool</em> de Montpellier.</p>
-            <p>L'option SISR forme à l'installation, la configuration et la maintenance
-              des infrastructures informatiques : serveurs, réseaux, sécurité et support utilisateurs.</p>
-            <p>En entreprise, je suis <strong>référent informatique chez Oc Santé</strong>, groupe de santé privé
-              de Montpellier : d'abord pour la Clinique Plein Soleil, puis pour la Clinique du Millénaire.</p>
-            <p>Avant le BTS, j'ai obtenu un <strong>Bac STMG</strong> (spécialité Mercatique) avec mention au lycée
-              Jean Mermoz, où j'étais major de ma classe en mathématiques. Dès la terminale, j'ai accompagné
-              des TPE en stratégie digitale.</p>
-            <p>Après mon BTS, je souhaite poursuivre en <strong>licence professionnelle / bachelor
-              administration systèmes, réseaux et cybersécurité</strong>.</p>
-          </div>
-          <ul class="about-info">
-            <li><span>📍</span> Montpellier, France</li>
-            <li><span>🎓</span> BTS SIO SISR en alternance – 2025/2027</li>
-            <li><span>🏥</span> Alternant chez Oc Santé</li>
-            <li><span>🚗</span> Permis B</li>
-            <li><span>🌐</span> Anglais : C1</li>
-            <li><span>⚽</span> Football, athlétisme</li>
+      <div class="side-body" id="sideBody">
+        <p class="status"><span class="dot" aria-hidden="true"></span>Alternant chez Oc Santé depuis septembre 2025</p>
+        <nav aria-label="Navigation principale">
+          <ul class="nav">
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="alternance.html">Parcours</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="veille.html">Veille</a></li>
+          <li><a href="contact.html">Contact</a></li>
           </ul>
+        </nav>
+        <div class="docs">
+          <p class="docs-title">Documents à télécharger</p>
+          <a class="btn btn-primary" href="cv.pdf" download="CV_Valentin_MOUTIER.pdf">Télécharger le CV <span class="fmt">PDF</span></a>
+          <a class="btn" href="tableau-synthese-E5.pdf" download="Tableau_synthese_E5_Valentin_MOUTIER.pdf">Tableau de synthèse E5 <span class="fmt">PDF</span></a>
+          <a class="btn" href="tableau-synthese-E5.xlsx" download="Tableau_synthese_E5_Valentin_MOUTIER.xlsx">Tableau de synthèse E5 <span class="fmt">Excel</span></a>
         </div>
+        <ul class="links">
+          <li><a href="mailto:moutiervalentin6@gmail.com">moutiervalentin6@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/valentin-moutier-82a618446" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/VALORrj" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
       </div>
-    </section>
+    </header>
 
-    <section class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">Explorer mon portfolio</h2>
-        <div class="home-grid">
-          <a href="competences.html" class="home-card"><span>🛠️</span><h3>Compétences</h3><p>Réseaux, systèmes, sécurité et référentiel BTS SIO.</p></a>
-          <a href="projets.html" class="home-card"><span>📁</span><h3>Projets</h3><p>Mes réalisations en TP et en entreprise.</p></a>
-          <a href="alternance.html" class="home-card"><span>🏢</span><h3>Expériences</h3><p>Mon alternance chez Oc Santé, mes stages et mes projets.</p></a>
-          <a href="veille.html" class="home-card"><span>📰</span><h3>Veille</h3><p>Ma veille technologique sur la cybersécurité.</p></a>
-          <a href="contact.html" class="home-card"><span>✉️</span><h3>Contact</h3><p>Me contacter ou télécharger mon CV.</p></a>
+    <main class="main" id="contenu">
+
+      <section class="hero">
+        <h1>Valentin Moutier</h1>
+        <p class="role">Étudiant en BTS SIO option SISR, technicien informatique en alternance</p>
+        <p class="lead">Je gère au quotidien le parc informatique de cliniques : déploiement de postes, comptes utilisateurs, mises à jour des logiciels de santé et support des équipes soignantes. Ce portfolio présente mes réalisations et les compétences du BTS qu'elles mobilisent.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="cv.pdf" download="CV_Valentin_MOUTIER.pdf">Télécharger le CV <span class="fmt">PDF</span></a>
+          <a class="btn" href="tableau-synthese-E5.pdf" download="Tableau_synthese_E5_Valentin_MOUTIER.pdf">Tableau de synthèse E5 <span class="fmt">PDF</span></a>
+          <a class="btn" href="tableau-synthese-E5.xlsx" download="Tableau_synthese_E5_Valentin_MOUTIER.xlsx">Tableau de synthèse E5 <span class="fmt">Excel</span></a>
+          <a class="link" href="projets.html">Voir les projets</a>
         </div>
-      </div>
-    </section>
+        <dl class="sheet">
+          <div><dt>Formation</dt><dd>BTS SIO option SISR, 2<sup>e</sup> année (2025–2027), MyDigitalSchool Montpellier</dd></div>
+          <div><dt>Alternance</dt><dd>Technicien puis référent informatique chez Oc Santé, groupe de santé privé de Montpellier</dd></div>
+          <div><dt>Périmètre</dt><dd>Clinique Plein Soleil, puis Clinique du Millénaire</dd></div>
+          <div class="key"><dt>Parc suivi</dt><dd>Environ 520 postes, 120 imprimantes et 35 équipements de bloc opératoire</dd></div>
+          <div><dt>Environnement</dt><dd>Windows 10/11, Windows Server, Active Directory, GPO, GLPI, MDT / WDS, Microsoft 365</dd></div>
+          <div><dt>Langues</dt><dd>Anglais C1</dd></div>
+          <div><dt>Mobilité</dt><dd>Montpellier, permis B</dd></div>
+        </dl>
+      </section>
 
-  </main>
+      <section class="section" aria-labelledby="missions">
+        <h2 id="missions">Mes missions chez Oc Santé</h2>
+        <ul class="missions">
+          <li>
+            <h3>Référent de parc</h3>
+            <p>Référent de la Clinique Plein Soleil puis de la Clinique du Millénaire : postes, imprimantes et équipements de bloc opératoire.</p>
+            <p class="codes"><span class="code">B1.1</span><span class="code">B1.2</span></p>
+          </li>
+          <li>
+            <h3>Renouvellement du parc</h3>
+            <p>Pilotage du renouvellement complet du parc de la Clinique Plein Soleil : masters, déploiement, migration des données.</p>
+            <p class="codes"><span class="code">B1.1</span><span class="code">B1.4</span><span class="code">B1.5</span></p>
+          </li>
+          <li>
+            <h3>Logiciels de santé</h3>
+            <p>Mises à jour majeures d'Hôpital Manager et d'Optim Bloc, menées avec la DSI.</p>
+            <p class="codes"><span class="code">B1.2</span><span class="code">B1.4</span><span class="code">B1.5</span></p>
+          </li>
+          <li>
+            <h3>Support et comptes</h3>
+            <p>Support N1/N2 des équipes soignantes et administratives, gestion des comptes dans l'Active Directory.</p>
+            <p class="codes"><span class="code">B1.1</span><span class="code">B1.2</span></p>
+          </li>
+        </ul>
+        <p style="margin-top:24px"><a class="link" href="alternance.html">Voir tout le parcours</a></p>
+      </section>
 
-  <button class="back-top" id="backTop" aria-label="Retour en haut">↑</button>
+      <section class="section" aria-labelledby="choix">
+        <h2 id="choix">Projets choisis</h2>
+        <ul class="picks">
+          <li><a href="projets.html?p=renouvellement-parc"><span class="pick-title">Renouvellement du parc d'une clinique</span><span class="pick-desc">Masters, déploiement des postes et migration des données</span><span class="pick-where">Oc Santé</span></a></li>
+          <li><a href="projets.html?p=active-directory"><span class="pick-title">Active Directory : utilisateurs et GPO</span><span class="pick-desc">Domaine, unités d'organisation, groupes et stratégies de groupe</span><span class="pick-where">TP en formation</span></a></li>
+          <li><a href="projets.html?p=vlan"><span class="pick-title">VLAN et routage inter-VLAN sur un switch Cisco</span><span class="pick-desc">Séparation des services sur un même switch</span><span class="pick-where">TP en formation</span></a></li>
+        </ul>
+      </section>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Valentin MOUTIER – Portfolio BTS SIO SISR</p>
-  </footer>
+      <section class="section" aria-labelledby="suite">
+        <h2 id="suite">Après le BTS</h2>
+        <p class="section-intro">Je souhaite poursuivre en licence professionnelle ou en bachelor administration systèmes, réseaux et cybersécurité, toujours en alternance. <a class="link" href="contact.html">Me contacter</a></p>
+      </section>
 
+      <footer class="foot">
+        <p>© <span id="year">2026</span> Valentin Moutier. Portfolio réalisé pour le BTS SIO option SISR, MyDigitalSchool Montpellier.</p>
+      </footer>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
