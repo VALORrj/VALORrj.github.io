@@ -246,3 +246,27 @@ dialog::backdrop { background: rgba(22,38,42,.55); }
   .main { padding: 0; }
 }
 .dlg-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px !important; }
+
+/* ---------- Accueil : présentation et parcours en bref ---------- */
+.about-text { max-width: 68ch; }
+.about-text p { color: var(--ink-soft); font-size: 16.5px; }
+.about-text p + p { margin-top: 14px; }
+.traits li { border-left-color: var(--amber); }
+.path { margin-top: 24px; }
+.path li { position: relative; display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 0 24px; padding-bottom: 22px; }
+.path li::before { content: ""; position: absolute; left: 157px; top: 14px; bottom: -6px; width: 2px; background: var(--line); }
+.path li:last-child::before { display: none; }
+.path li::after { content: ""; position: absolute; left: 152px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--scrub); }
+.path li.now::after { background: var(--amber); border-color: var(--amber-deep); }
+.path li.next::after { border-style: dashed; border-color: var(--muted); }
+.path-when { font-size: 14.5px; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 1px; white-space: nowrap; }
+.path-body { padding-left: 30px; }
+.path h3 { font-size: 16.5px; }
+.path p { margin-top: 2px; color: var(--ink-soft); font-size: 15px; }
+.path li.next h3, .path li.next p { color: var(--muted); }
+@media (max-width: 600px) {
+  .path li { grid-template-columns: 1fr; padding-left: 28px; }
+  .path li::before { left: 5px; }
+  .path li::after { left: 0; }
+  .path-body { padding-left: 0; }
+}
